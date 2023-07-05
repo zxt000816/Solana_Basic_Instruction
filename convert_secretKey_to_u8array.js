@@ -1,8 +1,8 @@
-const { utils } = require("@project-serum/anchor");
 const solanaWeb3 = require("@solana/web3.js");
+const anchor = require("@project-serum/anchor");
 
 const secretUnit8Array = solanaWeb3.Keypair.fromSecretKey(
-    utils.bytes.bs58.decode("4vx8VMkGD6MFszBPR2L7JEtZHwR39dSSE8BGru2cERcR")
+    anchor.utils.bytes.bs58.decode("SECRET_KEY")
 );
 
 console.log(secretUnit8Array.secretKey);
